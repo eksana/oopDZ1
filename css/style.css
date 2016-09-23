@@ -1,0 +1,22 @@
+.articles__title,.news__title,.reviews__title{
+	text-align: center;
+	}
+
+/*input [type="button"]{
+	display: inline-block;
+	
+}*/
+section{
+	text-align: center;
+}
+.article__button{
+	width: 200px;
+	height: 40px;
+	display: inline-block;
+	
+}
+/*.article__form{
+	width: 300px;
+	display: inline-block;
+	margin:0 auto;
+}*/
