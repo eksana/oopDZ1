@@ -6,10 +6,12 @@ $(document).ready(function(){
 		//$('.text').hide();
 		$.ajax({
 			type:"GET",
-			url:"viewDel.php",
-			//url:"controllerDel.php",
-			success:function(){
-				$('.textDel').html(data);
+		url:"viewDel2.php",
+			//url:"contrDel2.php",
+				//url:"delet.php",
+				//url:"controllerDel.php",
+			success:function(data){
+				$('.textDel2').html(data);
 				
 			}
 		});

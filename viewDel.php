@@ -11,14 +11,24 @@
  
 <?php 
 $GetDataFromDatabase = new GetDataFromDatabase;
+
+$result=$GetDataFromDatabase->query("DELETE * FROM reviews WHERE id =15");
+
+
 if($result==true){
     echo "ok";
-	    }
+	   }
 	    else{
 	    	echo "no";
 	    }
+	     
+
+
+
 
 ?>
+
+
  
 </table>
 </body>

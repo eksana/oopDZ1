@@ -2,7 +2,7 @@
 //include('index.html');
 
 
-$db = mysqli_connect('localhost', 'root', '', 'oopDZ1');
+$db = mysqli_connect('localhost', 'root', '', 'oopdz1');
 	mysqli_set_charset($db, 'utf8');
 mysqli_query($db,"SET NAMES utf8");
 

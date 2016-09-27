@@ -8,11 +8,12 @@ class database{
         $server   = "localhost";
         $user     = "root";
         $password = "";
-        $db       = "oopDZ1";
+        $db       = "oopdz1";
  
-        $this->connect = mysql_connect($server, $user, $password);
+        $this->connect = mysql_connect($server, $user, $password, $db);
         $this->selectDatabase = mysql_select_db($db); 
         //$this->query = mysql_query($db,"SET NAMES utf8");
+        //$this->connect->set_charset('utf8');
     }
  
     function close(){
