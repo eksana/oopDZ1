@@ -18,8 +18,9 @@ $GetDataFromDatabase->del_data_from_db();
 
 
 
-//echo "Удалено из таблицы $count записей. Обновите страницу";
-echo ("ok.Удалено $GetDataFromDatabase->affected_rows обновите страницу");
+
+
+echo ("ok.Удалено $count Обновите страницу");
 
 
 ?>

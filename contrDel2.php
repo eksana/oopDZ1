@@ -8,7 +8,7 @@ class GetDataFromDatabase extends database
     public $numRows;
      public $date=array();
        public $date_ak=array();
-       public $cnt;
+       public $res;
  
     function __construct(){
         parent::connect();
@@ -16,11 +16,7 @@ class GetDataFromDatabase extends database
         parent::close();
         
     }
-  /*function count(){
-       
-        $cnt = mysql_affected_rows();
-        $this->cnt = $cnt;
-    }*/
+  
    
     
  
@@ -31,12 +27,15 @@ class GetDataFromDatabase extends database
        // $query = "DELETE FROM reviews WHERE date < (NOW())";
         
 
-        $result = mysql_query($query);
-         $cnt = mysql_affected_rows($result);
-       // $this->cnt = $cnt;
+       $result =  mysql_query($query);
+       //$res=mysql_affected_rows();
+        //return $this->res;
+        
+       
 
-       //$count=mysqli_affected_rows($this->connect,$query);
-     //$GetDataFromDatabase->affected_rows;
+      $count=mysqli_affected_rows($this->connect,$result);
+     // return $this->count;
+     
       //echo "Удалено из таблицы $GetDataFromDatabase->affected_rows записей";
 
        
