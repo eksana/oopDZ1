@@ -33,8 +33,10 @@ class GetDataFromDatabase extends database
         
        
 
-      $count=mysqli_affected_rows($this->connect,$result);
+      //$count=mysqli_affected_rows($this->connect,$result);
      // return $this->count;
+       $count=mysqli_affected_rows();
+       return $count;
      
       //echo "Удалено из таблицы $GetDataFromDatabase->affected_rows записей";
 

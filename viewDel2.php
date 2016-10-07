@@ -15,6 +15,7 @@ $GetDataFromDatabase = new GetDataFromDatabase;
 
 
 $GetDataFromDatabase->del_data_from_db();
+//$count=$GetDataFromDatabase->del_data_from_db();
 
 
 
